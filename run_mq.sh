@@ -2,7 +2,7 @@
 
 cd /opt/activemq
 
-java -Xms1G -Xmx1G \
+java -Xms256M -Xmx256M \
 	-Djava.util.logging.config.file=logging.properties \
 	-Dcom.sun.management.jmxremote \
 	-Dactivemq.classpath=/data/broker \
