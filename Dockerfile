@@ -5,6 +5,6 @@ RUN cd /opt && curl http://apache-mirror.rbc.ru/pub/apache/activemq/5.11.1/apach
 
 WORKDIR /data/broker
 
-ADD ./run_mq.sh /data/broker/run_mq.sh
+ADD ./run_mq.sh /opt/activemq/run_mq.sh
 
-CMD ["/data/broker/run_mq.sh"]
+CMD ["/opt/activemq/run_mq.sh"]
