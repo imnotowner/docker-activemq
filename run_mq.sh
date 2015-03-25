@@ -2,7 +2,7 @@
 
 cd /opt/activemq
 
-java \
+java -Xms${XMS:=256M} -Xmx${XMX:=256M} \
 	-Djava.util.logging.config.file=logging.properties \
 	-Dcom.sun.management.jmxremote \
 	-Dactivemq.classpath=/data/broker/conf \
